@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Duta Mas Sumedang</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Header -->
+    <header class="bg-yellow-400 p-4 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Toko Duta Mas Sumedang</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="Home.html" class="text-white hover:text-yellow-200">Home</a></li>
+                    <li><a href="about.html" class="text-white hover:text-yellow-200">About</a></li>
+                    <li><a href="product.html" class="text-white hover:text-yellow-200">Products</a></li>
+                    <li><a href="contact.html" class="text-white hover:text-yellow-200">Contact</a></li>
+                    <li><a href="login.html" class="text-white hover:text-yellow-200">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Slider -->
+    <section id="home" class="h-screen relative">
+        <div class="swiper-container h-screen">
+            <div class="swiper-wrapper h-screen">
+                <!-- Slide 1 -->
+                <div class="swiper-slide bg-cover bg-center h-full" style="background-image: url('banner2.jpg');">
+                    <div class="text-center text-white bg-green-700 bg-opacity-70 p-10 flex items-center justify-center h-full">
+                        <div>
+                            <h2 class="text-4xl font-bold mb-4">Kilau Elegan yang Mempesona</h2>
+                            <p class="text-lg mb-4">Produk berkualitas untuk momen spesial</p>
+                            <img src="diamond-ring.jpg" alt="Cincin Berlian" class="mx-auto rounded shadow-lg w-1/2">
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide bg-cover bg-center h-full" style="background-image: url('banner1.jpg');">
+                    <div class="text-center text-white bg-black bg-opacity-50 p-10 flex items-center justify-center h-full">
+                        <div>
+                            <h2 class="text-4xl font-bold mb-4">Kemewahan Emas Eksklusif</h2>
+                            <p class="text-lg mb-4">Temukan koleksi perhiasan terbaik</p>
+                            <img src="gold-necklace.jpg" alt="Kalung Emas" class="mx-auto rounded shadow-lg w-1/2">
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide bg-cover bg-center h-full" style="background-image: url('banner2.jpg');">
+                    <div class="text-center text-white bg-green-700 bg-opacity-70 p-10 flex items-center justify-center h-full">
+                        <div>
+                            <h2 class="text-4xl font-bold mb-4">Kilau Elegan yang Mempesona</h2>
+                            <p class="text-lg mb-4">Produk berkualitas untuk momen spesial</p>
+                            <img src="diamond-ring.jpg" alt="Cincin Berlian" class="mx-auto rounded shadow-lg w-1/2">
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="swiper-slide bg-cover bg-center h-full" style="background-image: url('banner1.jpg');">
+                    <div class="text-center text-white bg-black bg-opacity-50 p-10 flex items-center justify-center h-full">
+                        <div>
+                            <h2 class="text-4xl font-bold mb-4">Kemewahan Emas Eksklusif</h2>
+                            <p class="text-lg mb-4">Temukan koleksi perhiasan terbaik</p>
+                            <img src="gold-necklace.jpg" alt="Kalung Emas" class="mx-auto rounded shadow-lg w-1/2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>        
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Tentang Kami</h2>
+            <p class="max-w-2xl mx-auto text-gray-700 mb-6">
+                Toko Duta Mas Sumedang adalah toko perhiasan terpercaya yang menyediakan koleksi emas berkualitas tinggi dan beragam produk perhiasan untuk memenuhi kebutuhan gaya hidup pelanggan kami.
+            </p>
+            <div class="max-w-4xl mx-auto">
+                <video class="rounded shadow-lg w-full" autoplay loop muted>
+                    <source src="about-video.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung elemen video.
+                </video>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Products Section -->
+    <section id="products" class="py-20">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-6 text-center">Produk Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product Card -->
+                <div class="bg-white shadow rounded overflow-hidden">
+                    <img src="product1.jpg" alt="Kalung Emas 24K" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Kalung Emas 24K</h3>
+                        <p class="text-gray-600 mb-4">Berat: <input type="number" class="border border-gray-300 rounded p-1" id="weight-1" value="10" min="1"> gram</p>
+                        <p class="text-lg font-bold text-yellow-500">Rp <span id="price-1">5,000,000</span></p>
+                    </div>
+                </div>
+                <!-- Tambahkan produk lainnya -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Hubungi Kami</h2>
+            <p class="text-gray-700 mb-4">Untuk informasi lebih lanjut, hubungi kami:</p>
+            <p class="font-semibold">Email: info@tokodutamas.com | Telp: +62 123 4567 890</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-yellow-400 py-4">
+        <div class="container mx-auto text-center text-gray-800">
+            &copy; 2024 Toko Duta Mas Sumedang. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>

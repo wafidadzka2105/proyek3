@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Registrasi - Toko Duta Mas Sumedang</title>
+  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=qr_code_scanner" />
+  <link rel="stylesheet" href="/css/login.css">
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+  <div class="container" id="container">
+    <div class="form-container register-container">
+      <form action="#">
+        <h1>Registrasi</h1>
+        <input type="text" placeholder="Nama Pengguna">
+        <input type="email" placeholder="Email">
+        <input type="number" placeholder="Nomor Telepon">
+        <input type="password" placeholder="Kata Sandi">
+        <button>Daftar</button>
+        <span>atau gunakan akun Anda</span>
+        <div class="social-container">
+          <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
+          <a href="#" class="social"><i class="lni lni-google"></i></a>
+          <a href="#" class="social"><i class="lni lni-whatsapp"></i></a>
+        </div>
+      </form>
+    </div>
+
+    <div class="form-container login-container">
+      <form action="#">
+        <h1>Masuk</h1>
+        <input type="text" placeholder="Nama Pengguna">
+        <input type="password" placeholder="Kata Sandi">
+        <div class="content">
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label>Ingat Saya</label>
+          </div>
+          <div class="pass-link">
+            <a href="#">Lupa kata sandi?</a>
+          </div>
+        </div>
+        <button>Masuk</button>
+        <span>atau gunakan akun Anda</span>
+        <div class="social-container">
+          <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
+          <a href="#" class="social"><i class="lni lni-google"></i></a>
+          <a href="#" class="social"><i class="lni lni-whatsapp"></i></a>
+        </div>
+      </form>
+    </div>
+
+    <div class="overlay-container">
+      <div class="overlay">
+        <a href="index.html" style="color: #fff;">
+          <i class="ph ph-arrow-circle-left back" id="back-btn"></i>
+        </a>
+        <div class="overlay-panel overlay-left">
+          <h1>Selamat Datang</h1>
+          <p>Jika Anda sudah memiliki akun, masuk di sini dan nikmati pengalaman berbelanja Anda!</p>
+          <button class="ghost" id="login">Masuk
+            <i class="lni lni-arrow-left login"></i>
+          </button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>Mulai Perjalanan Anda</h1>
+          <p>Jika Anda belum memiliki akun, daftarkan diri dan mulai belanja.</p>
+          <button class="ghost" id="register">Daftar
+            <i class="lni lni-arrow-right register"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="/js/login.js"></script>
+
+</body>
+</html>
