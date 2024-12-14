@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelola Produk</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <div class="flex">
+        <div class="w-1/5 bg-yellow-500 text-white p-4">
+            <h1 class="text-2xl font-bold mb-8">Admin Dashboard</h1>
+            <ul>
+                <li><a href="admin_dashboard.html" class="block py-2">Dashboard</a></li>
+                <li><a href="kelola_produk.html" class="block py-2">Kelola Produk</a></li>
+                <li><a href="kelola_custom_product.html" class="block py-2">Kelola Custom Produk</a></li>
+                <li><a href="pesanan.html" class="block py-2">Pesanan</a></li>
+                <li><a href="pelanggan.html" class="block py-2">Pelanggan</a></li>
+            </ul>
+        </div>
+
+        <div class="flex-1 p-8">
+            <h2 class="text-3xl font-bold mb-6">Kelola Produk</h2>
+            <button class="px-4 py-2 bg-yellow-500 hover:bg-yellow-600 text-white rounded mb-4">Tambah Produk</button>
+            <table class="w-full bg-white rounded shadow">
+                <thead class="bg-yellow-500 text-white">
+                    <tr>
+                        <th class="p-4">#</th>
+                        <th class="p-4">Nama Produk</th>
+                        <th class="p-4">Kategori</th>
+                        <th class="p-4">Harga</th>
+                        <th class="p-4">Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="p-4">1</td>
+                        <td class="p-4">Kalung Emas 24K</td>
+                        <td class="p-4">Perhiasan</td>
+                        <td class="p-4">Rp 5.000.000</td>
+                        <td class="p-4">
+                            <button class="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded">Edit</button>
+                            <button class="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded">Hapus</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produk - Toko Mas Duta Sumedang</title>
+    <title>Galeri Produk - Toko Mas Duta Sumedang</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="product.js"></script>
 </head>
 <body class="bg-gray-50">
 
@@ -14,76 +13,138 @@
         <div class="container mx-auto flex items-center justify-between">
             <h1 class="text-4xl font-extrabold tracking-widest">Toko Mas Duta Sumedang</h1>
             <nav>
-                <ul class="flex space-x-8">
+                <ul class="flex space-x-4">
                     <li><a href="Home.html" class="text-white hover:text-yellow-200">Home</a></li>
-                    <li><a href="about.html" class="text-white hover:text-yellow-200">About</a></li>
-                    <li><a href="product.html" class="text-white hover:text-yellow-200">Products</a></li>
-                    <li><a href="contact.html" class="text-white hover:text-yellow-200">Contact</a></li>
-                    <li><a href="login.html" class="text-white hover:text-yellow-200">Login</a></li>
+                    <li><a href="About.html" class="text-white hover:text-yellow-200">About</a></li>
+                    <li><a href="Product.html" class="text-white hover:text-yellow-200">Products</a></li>
+                    <li><a href="Customproduct.html" class="hover:text-yellow-200">Custom</a></li>
+                    <li><a href="Contact.html" class="text-white hover:text-yellow-200">Contact</a></li>
+                    <li><a href="Login.html" class="text-white hover:text-yellow-200">Login</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Product Section -->
-    <section id="products" class="py-20 bg-gray-50">
+    <!-- Galeri Produk -->
+    <section id="gallery" class="py-20 bg-gray-50">
         <div class="container mx-auto">
-            <h2 class="text-3xl font-bold mb-6 text-center">Produk Kami</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Produk Emas 24k -->
-                <div class="bg-white shadow-lg rounded-lg p-6">
-                    <h3 class="text-xl font-bold text-yellow-600 mb-4">Emas 24k</h3>
-                    <p class="mb-4">Pilih berat emas yang Anda inginkan:</p>
-                    <label for="emas-gram" class="block text-sm font-semibold mb-2">Berat (gram)</label>
-                    <input 
-                        type="number" 
-                        id="emas-gram" 
-                        class="border border-gray-300 rounded w-full p-2 mb-4"
-                        value="1" 
-                        min="1"
-                        oninput="updatePrice('emas', 1000000)"
-                    >
-                    <p class="text-lg font-bold mb-4">Harga: Rp<span id="emas-price">1,000,000</span></p>
-                    <button class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">
-                        Tambah ke Keranjang
-                    </button>
+            <h2 class="text-3xl font-bold mb-6 text-center">Galeri Produk Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Item Galeri -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer" onclick="showModal('Emas 24k', 1000000, 'img/product4.png')">
+                    <img src="img/product4.png" alt="Emas 24k" class="w-full h-48 object-contain">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-yellow-600">Gelang</h3>
+                    </div>
                 </div>
-    
-                <!-- Produk Logam Mulia -->
-                <div class="bg-white shadow-lg rounded-lg p-6">
-                    <h3 class="text-xl font-bold text-yellow-600 mb-4">Logam Mulia</h3>
-                    <p class="mb-4">Pilih berat logam yang Anda inginkan:</p>
-                    <label for="logam-gram" class="block text-sm font-semibold mb-2">Berat (gram)</label>
-                    <input 
-                        type="number" 
-                        id="logam-gram" 
-                        class="border border-gray-300 rounded w-full p-2 mb-4"
-                        value="1" 
-                        min="1"
-                        oninput="updatePrice('logam', 500000)"
-                    >
-                    <p class="text-lg font-bold mb-4">Harga: Rp<span id="logam-price">500,000</span></p>
-                    <button class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">
-                        Tambah ke Keranjang
-                    </button>
+
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer" onclick="showModal('Emas 24k', 1000000, 'img/product5.jpg')">
+                    <img src="img/product5.jpg" alt="Emas 24k" class="w-full h-48 object-contain">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-yellow-600">Kalung</h3>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer" onclick="showModal('Logam Mulia', 500000, 'img/product3.png')">
+                    <img src="img/product3.png" alt="Logam Mulia" class="w-full h-48 object-contain">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-yellow-600">Logam Mulia</h3>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer" onclick="showModal('Logam Mulia', 500000, 'img/product6.jpg')">
+                    <img src="img/product6.jpg" alt="Logam Mulia" class="w-full h-48 object-contain">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-yellow-600">Kalung</h3>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer" onclick="showModal('Logam Mulia', 500000, 'img/product7.jpg')">
+                    <img src="img/product7.jpg" alt="Logam Mulia" class="w-full h-48 object-contain">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-yellow-600">Cincin</h3>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer" onclick="showModal('Logam Mulia', 500000, 'img/product9.jpg')">
+                    <img src="img/product9.jpeg" alt="Logam Mulia" class="w-full h-48 object-contain">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-yellow-600">Anting</h3>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer" onclick="showModal('Logam Mulia', 500000, 'img/product8.jpg')">
+                    <img src="img/product8.jpg" alt="Logam Mulia" class="w-full h-48 object-contain">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-yellow-600">Cincin</h3>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer" onclick="showModal('Logam Mulia', 500000, 'img/product10.jpg')">
+                    <img src="img/product10.jpg" alt="Logam Mulia" class="w-full h-48 object-contain">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-yellow-600">Anting</h3>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer" onclick="showModal('Logam Mulia', 500000, 'img/product11.jpg')">
+                    <img src="img/product11.jpg" alt="Logam Mulia" class="w-full h-48 object-contain">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-yellow-600">Logam Mulia</h3>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
+    <!-- Modal -->
+    <div id="product-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-white rounded-lg shadow-lg p-6 w-full max-w-md">
+            <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-800" onclick="closeModal()">✖</button>
+            <img id="modal-image" src="" alt="Produk" class="w-full h-48 object-contain rounded-lg mb-4">
+            <h3 id="modal-title" class="text-xl font-bold text-yellow-600 mb-2"></h3>
+            <p id="modal-description" class="mb-4"></p>
+            <label for="modal-gram" class="block text-sm font-semibold mb-2">Berat (gram):</label>
+            <input 
+                type="number" 
+                id="modal-gram" 
+                class="border border-gray-300 rounded w-full p-2 mb-4"
+                value="1" 
+                min="1"
+                oninput="updateModalPrice()"
+            >
+            <p class="text-lg font-bold mb-4">Harga: Rp<span id="modal-price">0</span></p>
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 w-full">
+                Tambah ke Keranjang
+            </button>
+        </div>
+    </div>
+
     <script>
-        // Fungsi untuk menghitung dan memperbarui harga
-        function updatePrice(product, pricePerGram) {
-            const weightInput = document.getElementById(`${product}-gram`);
-            const priceElement = document.getElementById(`${product}-price`);
-            const weight = parseInt(weightInput.value) || 0;
-            const totalPrice = weight * pricePerGram;
-    
-            // Format angka ke dalam rupiah
-            priceElement.textContent = totalPrice.toLocaleString("id-ID");
+        let currentPricePerGram = 0;
+
+        // Tampilkan modal dengan informasi produk
+        function showModal(title, pricePerGram, imageSrc) {
+            document.getElementById('product-modal').classList.remove('hidden');
+            document.getElementById('modal-title').textContent = title;
+            document.getElementById('modal-description').textContent = `Produk ${title}. Harga per gram Rp${pricePerGram.toLocaleString("id-ID")}.`;
+            document.getElementById('modal-image').src = imageSrc;
+            currentPricePerGram = pricePerGram;
+            updateModalPrice();
+        }
+
+        // Sembunyikan modal
+        function closeModal() {
+            document.getElementById('product-modal').classList.add('hidden');
+        }
+
+        // Perbarui harga dalam modal berdasarkan berat
+        function updateModalPrice() {
+            const weight = parseInt(document.getElementById('modal-gram').value) || 0;
+            const totalPrice = weight * currentPricePerGram;
+            document.getElementById('modal-price').textContent = totalPrice.toLocaleString("id-ID");
         }
     </script>
-    
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-6">
